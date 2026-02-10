@@ -1,7 +1,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "math.h"
-
+// This function displays the menu
 void displayMenu() {
     printf("\n========================================\n");
     printf("         CLI CALCULATOR MENU\n");
@@ -19,30 +19,22 @@ void displayMenu() {
     printf("========================================\n");
     printf("Enter your choice: ");
 }
-
-double add(double a, double b) {
-    return a + b;
-}
-
-double subtract(double a, double b) {
-    return a - b;
-}
-
+// This function is for multiplication
 double multiply(double a, double b) {
     return a * b;
 }
-
+// This function is for division
 double divide(double a, double b) {
     if (b == 0) {
-        printf("Error: Division by zero!\n");
+        printf("Error: Division by zero!\n"); // Error handling for division by zero
         return 0;
     }
     return a / b;
 }
-
+// This function is for modulus
 int modulus(int a, int b) {
     if (b == 0) {
-        printf("Error: Modulus by zero!\n");
+        printf("Error: Modulus by zero!\n"); // Error handling for modulus by zero
         return 0;
     }
     return a % b;
@@ -154,4 +146,5 @@ int main() {
     }
     
     return 0;
+
 }
